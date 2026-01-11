@@ -1,84 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    h1,h2{
-        font-weight: bold;
-    }
-    .card:hover{
-        transform: scale(1.05);
-        transition: transform 0.3s ease-in-out;
-    }
-    #img{
-        display:block;
-        margin: 0 auto;
-        border: 2px solid #666;
-    }
-</style>
+    <title>B. Joshitha | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of B. Joshitha, a Full Stack Developer specializing in Web and Django.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Joshitha</a>
-    </div>
-  </nav>
 
-  <header class="text-center py-5 bg-light">
-    <h1>Hello, I'm Joshitha 👋</h1>
-    <img src="joshi.jpg" width="220" height="180" alt="Joshitha" id="img">
-    <p class="lead">Web Developer | Java Programmer | CSE Student</p>
-  </header>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+    </button>
 
-  <section class="container my-5">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Weather App</h5>
-            <p class="card-text">Built using HTML, CSS & JS with live weather API.</p>
-          </div>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">BJ</div>
         </div>
-      </div>
-      
-      <!-- Add more project cards here -->
-        <div class="col-md-4">
-         <div class="card shadow-sm">
-            <div class="card-body">
-                <h5 class="card-title">Math game</h5>
-                <p class="card-text">Built using C pragramming.</p>
-            </div>
-         </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> <span>About Me</span></a></li>
+            <li><a href="#internships"><i class="fas fa-briefcase"></i> <span>Internship</span></a></li>
+            <li><a href="#projects"><i class="fas fa-code"></i> <span>Projects</span></a></li>
+            <li><a href="#skills"><i class="fas fa-laptop-code"></i> <span>Skills</span></a></li>
+            <li><a href="#education"><i class="fas fa-graduation-cap"></i> <span>Education</span></a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="https://github.com/joshitha251" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/joshitha-b-648910357/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
-    
-        <div class="col-md-4">
-            <div class="card shadow-sm">
-            <div class="card-body">
-                <h5 class="card-title">Portfolio Websites</h5>
-                <p class="card-text">Created using HTML,CSS & JS to showcase work.</p>
-            </div>
-            </div>
-        </div>
-    </div>
-  </section>
+    </nav>
 
-  <section class="bg-dark text-white py-1">
-    <div class="container text-center">
-      <h2>Contact Me</h2>
-      <p>Email: joshitha1903@gmail.com</p>
-    </div>
-  </section>
+    <!-- Main Content -->
+    <main class="main-content">
 
-  <footer class="text-center py-3 bg-secondary text-white">
-    &copy; 2025 Joshitha | All rights reserved
-  </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="greeting">hi, I’m</span>
+                <h1 class="name">B. Joshitha.</h1>
+                <h2 class="subtitle">Full Stack Developer</h2>
+                <p class="hero-text">
+                    Open for part time jobs and Internships.
+                </p>
+                <a href="#projects" class="cta-button">My Projects</a>
+            </div>
+            <div class="hero-image">
+                <img src="profile.jpeg" class="profile-img">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title"><span>01.</span> About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hello! I'm Joshitha, a Diploma Computer Science student with a passion for web and backend
+                    development.
+                    I enjoy creating clean, functional applications and strictly focus on improving my technical skills
+                    through hands-on projects.
+                </p>
+                <p>
+                    My main focus these days is building accessible, inclusive products and digital experiences for a
+                    variety of clients.
+                </p>
+            </div>
+        </section>
+
+        <!-- Internship Section -->
+        <section id="internships" class="section">
+            <h2 class="section-title"><span>02.</span> Internship</h2>
+            <div class="internship-card">
+                <h3>6 Month Full Stack Python Internship</h3>
+                <ul class="tech-list">
+                    <li>Python & Django Framework</li>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Backend Development</li>
+                    <li>Database Management</li>
+                </ul>
+                <a href="certificate.jpeg" target="_blank" class="secondary-button">View Certificate</a>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title"><span>03.</span> Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>QR Code Generator</h3>
+                    <p>A web application built with Django that allows users to generate QR codes for various types of
+                        data efficiently.</p>
+                    <ul class="project-tech">
+                        <li>Django</li>
+                        <li>Python</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Inventory Management System</h3>
+                    <p>College project to manage products, stock levels, and billing processes. streamlines inventory
+                        tracking.</p>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>Tkinter</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="External Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>A personal website designed to showcase my skills, projects, and professional background. Built
+                        with semantic HTML and modern CSS.</p>
+                    <ul class="project-tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title"><span>04.</span> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><i class="fab fa-html5"></i> <span>HTML</span></div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i> <span>CSS</span></div>
+                <div class="skill-item"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                <div class="skill-item"><i class="fab fa-python"></i> <span>Python</span></div>
+                <div class="skill-item"><i class="fas fa-server"></i> <span>Django</span></div>
+                <div class="skill-item"><i class="fab fa-php"></i> <span>PHP</span></div>
+                <div class="skill-item"><i class="fas fa-code"></i> <span>C</span></div>
+                <div class="skill-item"><i class="fab fa-java"></i> <span>Java</span></div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i> <span>Git</span></div>
+                <div class="skill-item"><i class="fab fa-github"></i> <span>GitHub</span></div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title"><span>05.</span> Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Diploma in Computer Science Engineering</h3>
+                        <p class="college-name">Aditya University</p>
+                        <span class="year">2023 - 2026</span>
+                        <p>Focused on core computer science concepts, programming fundamentals, and software engineering
+                            principles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title"><span>06.</span> Create Something New?</h2>
+            <h3 class="big-heading">Get In Touch</h3>
+            <p class="contact-desc">
+                I am currently looking for internships and part-time opportunities. overflow with ideas? My inbox is
+                always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <a href="mailto:joshitha1903@gmail.com" class="cta-button">Say Hello</a>
+
+            <div class="social-links-footer">
+                <a href="https://github.com/joshitha251" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/joshitha-b-648910357/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+
+            <footer class="footer">
+                <p>Designed & Built by B. Joshitha</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
