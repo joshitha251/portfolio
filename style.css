@@ -499,6 +499,7 @@ section {
 }
 
 /* Education Section */
+
 .timeline {
     max-width: 700px;
     position: relative;
@@ -543,7 +544,7 @@ section {
 }
 
 /* Contact Section */
-.contact-section {
+.contact-section{
     text-align: center;
     align-items: center;
     max-width: 600px;
@@ -559,6 +560,7 @@ section {
 .contact-desc {
     font-size: 1.2rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .social-links-footer {
@@ -633,6 +635,7 @@ section {
     }
 
     .section-title {
+
         font-size: 1.5rem;
     }
 
